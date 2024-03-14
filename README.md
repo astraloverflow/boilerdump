@@ -58,7 +58,7 @@ The boilerdump config will generally look like this, however, the only required 
 }
 ```
 
-If your editor supports JSON Schema, be sure to include the `"$schema"` property in your config file.
+If your editor supports JSON Schema, be sure to include the `"$schema"` property in your config file. It will provide auto-completion and validation in your editor.
 
 To generate a GitHub API token, go to your settings on GitHub, then go to "Developer Settings" -> "Personal access tokens" -> "Tokens (Classic)" -> "Generate new token (Classic)".
 
