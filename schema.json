@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Boilerdump",
+  "type": "object",
+  "properties": {
+    "github_api_token": {
+      "type": "string"
+    },
+    "gist": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          }
+        },
+        "required": ["name", "id"]
+      }
+    }
+  },
+  "required": ["github_api_token"]
+}

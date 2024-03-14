@@ -1,0 +1,6 @@
+{
+  "tasks": {
+    // Leaving out the --write flag to avoid accidentally overwritting files during development
+    "dev": "deno run --watch --allow-env=HOME --allow-read=./,$HOME/.boilerdump.jsonc --allow-net=api.github.com main.ts"
+  }
+}
