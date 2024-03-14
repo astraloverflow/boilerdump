@@ -13,13 +13,13 @@ Boilerdump is a simple tool to download config files and other boilerplate from 
 For Linux and Mac:
 
 ```sh
-deno install -n=boilerdump --allow-env=HOME --allow-read=./,$HOME/.boilerdump.jsonc --allow-write=./ --allow-net=api.github.com https://esm.sh/gh/astraloverflow/boilerdump@0.1.0/main.ts
+deno install -n=boilerdump --allow-env=HOME --allow-read=./,$HOME/.boilerdump.jsonc --allow-write=./ --allow-net=api.github.com https://raw.githubusercontent.com/astraloverflow/boilerdump/0.1.0/main.ts
 ```
 
 For Windows _(currently untested)_:
 
 ```sh
-deno install -n=boilerdump --allow-env=USERPROFILE --allow-read=./,$USERPROFILE/.boilerdump.jsonc --allow-write=./ --allow-net=api.github.com https://esm.sh/gh/astraloverflow/boilerdump@0.1.0/main.ts
+deno install -n=boilerdump --allow-env=USERPROFILE --allow-read=./,$USERPROFILE/.boilerdump.jsonc --allow-write=./ --allow-net=api.github.com https://raw.githubusercontent.com/astraloverflow/boilerdump/0.1.0/main.ts
 ```
 
 If you want the added safety of confirming each file you write to your target directory, remove `--allow-write=./` from the above install command. Doing so will make Deno ask for permission tp write each file.
@@ -43,7 +43,7 @@ The boilerdump config will generally look like this, however, the only required 
   // Boilerdump Aliases
 
   // JSON Schema
-  "$schema": "https://esm.sh/gh/astraloverflow/boilerdump/schema.json",
+  "$schema": "https://raw.githubusercontent.com/astraloverflow/boilerdump/0.1.0/schema.json",
 
   // Your GitHub API Token
   "github_api_token": "ghp_YOUR_API_TOKEN_HERE",
